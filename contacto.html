@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contacto y presupuesto · Irene Casals Fotografía</title>
+  <meta name="description" content="Pide presupuesto para tu sesión de fotos en Barcelona: retrato, boda, producto, marca, evento o arquitectura. (Web de demostración.)">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#110f0d">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500&display=swap">
+  <link rel="stylesheet" href="styles.css?v=20260927">
+  <script>document.documentElement.classList.add("js");setTimeout(function(){if(!window.__KB_OK)document.documentElement.classList.add("reveal-all");},3500);</script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <div class="demo-bar" role="note"><span><b>Proyecto de demostración</b><span class="demo-long"> · Irene Casals es una fotógrafa ficticia. Las imágenes son de autores reales bajo licencia Creative Commons (ver créditos).</span></span></div>
+  <div class="cursor" aria-hidden="true"><div class="ring"><span>Ver</span></div></div>
+  <header class="nav solid" data-nav>
+    <div class="nav-inner">
+      <a class="logo" href="index.html" aria-label="Irene Casals Fotografía, inicio">Irene Casals<i>.</i><small>Fotografía · Barcelona</small></a>
+      <nav class="nav-links" aria-label="Principal">
+        <a href="portafolio.html">Portafolio</a>
+        <a href="servicios.html">Servicios y tarifas</a>
+        <a href="index.html#sobre-mi">Sobre mí</a>
+        <a href="contacto.html" aria-current="page">Contacto</a>
+      </nav>
+      <div class="nav-right">
+        <a class="btn btn-amber" href="contacto.html">Pedir presupuesto</a>
+        <button class="burger" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <nav class="menu" id="menu" aria-hidden="true" aria-label="Menú móvil">
+    <div>
+      <a class="big" href="index.html">Inicio</a>
+      <a class="big" href="portafolio.html">Portafolio</a>
+      <a class="big" href="servicios.html">Tarifas</a>
+      <a class="big" href="contacto.html">Contacto</a>
+    </div>
+    <div class="mono mute" style="display:grid;gap:4px"><span>hola@irenecasals.example</span><span>+34 000 000 000</span><span>Instagram · @irenecasals.demo</span></div>
+  </nav>
+
+  <main id="main">
+    <header class="page-head wrap">
+      <p class="eyebrow">Presupuesto en 24 h</p>
+      <h1>Hablemos de tu <em>proyecto</em></h1>
+      <p class="lead">Elige el tipo de sesión y verás un precio orientativo al momento. Después te envío el presupuesto cerrado.</p>
+    </header>
+    <div class="wrap contact" style="padding-bottom:clamp(60px,8vw,110px)">
+      <div>
+        <form class="form" data-demo-form data-quote-form novalidate>
+          <fieldset class="field"><legend>Tipo de sesión</legend><div class="chips"><input type="radio" id="t-retrato" name="tipo" value="retrato"><label for="t-retrato">Retrato</label><input type="radio" id="t-boda" name="tipo" value="boda"><label for="t-boda">Boda</label><input type="radio" id="t-producto" name="tipo" value="producto"><label for="t-producto">Producto</label><input type="radio" id="t-marca" name="tipo" value="marca"><label for="t-marca">Marca personal</label><input type="radio" id="t-evento" name="tipo" value="evento"><label for="t-evento">Evento</label><input type="radio" id="t-arquitectura" name="tipo" value="arquitectura"><label for="t-arquitectura">Arquitectura</label></div><span class="err" data-tipo-err aria-live="polite"></span></fieldset>
+          <div class="field" data-hours-field><label for="horas">Horas extra de cobertura</label><select id="horas" name="horas"><option value="0">Ninguna</option><option value="1">1 hora</option><option value="2">2 horas</option><option value="3">3 horas</option><option value="4">4 horas</option></select></div>
+          <fieldset class="field"><legend>Extras</legend><div class="chips"><input type="checkbox" id="x-album" name="extra" value="album"><label for="x-album">Álbum impreso (+290 €)</label><input type="checkbox" id="x-video" name="extra" value="video"><label for="x-video">Vídeo resumen (+450 €)</label><input type="checkbox" id="x-express" name="extra" value="express"><label for="x-express">Entrega exprés (+120 €)</label><input type="checkbox" id="x-desplazamiento" name="extra" value="desplazamiento"><label for="x-desplazamiento">Fuera de Barcelona (+60 €)</label></div></fieldset>
+          <div class="estimate" aria-live="polite"><span class="mono mute">Precio orientativo</span><b data-estimate>—</b><small data-estimate-note>Elige un tipo de sesión para ver un precio orientativo.</small></div>
+          <div class="form-row">
+            <div class="field"><label for="nombre">Nombre</label><input id="nombre" name="nombre" autocomplete="name" required><span class="err"></span></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" required><span class="err"></span></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label for="fecha">Fecha aproximada</label><input id="fecha" name="fecha" type="date"><span class="err"></span></div>
+            <div class="field"><label for="lugar">Lugar</label><input id="lugar" name="lugar" placeholder="Barcelona, Girona…"><span class="err"></span></div>
+          </div>
+          <div class="field"><label for="msg">Cuéntame un poco más</label><textarea id="msg" name="mensaje" placeholder="Qué tienes en mente, para qué son las fotos, referencias que te gusten…"></textarea></div>
+          <p><button class="btn btn-amber" type="submit">Enviar solicitud <span class="ar">→</span></button></p>
+          <p class="mono mute">Demo: no se envía ni se guarda nada.</p>
+        </form>
+        <div class="success" data-success role="status" aria-live="polite">
+          <p class="eyebrow">Recibido</p>
+          <h2>Gracias, <em data-name></em>.</h2>
+          <p class="lead">Te escribiría en menos de 24 horas con el presupuesto cerrado. Precio orientativo: <b data-success-est></b>.</p>
+          <p class="mono mute">Esto es una demostración: la solicitud no se ha enviado.</p>
+        </div>
+      </div>
+      <aside class="contact-side">
+        <div class="ph" data-reveal="img"><img src="assets/img/retrato-04.webp" alt="Retrato de una mujer de perfil con un velo translúcido" width="1024" height="819" loading="lazy" decoding="async"></div>
+        <span class="avail"><i></i>Fechas libres para octubre y noviembre</span>
+        <dl>
+          <div><dt>Email</dt><dd>hola@irenecasals.example</dd></div>
+          <div><dt>Teléfono / WhatsApp</dt><dd>+34 000 000 000</dd></div>
+          <div><dt>Estudio</dt><dd>Barcelona · con cita previa</dd></div>
+          <div><dt>Instagram</dt><dd>@irenecasals.demo</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p class="eyebrow">¿Hablamos?</p>
+      <a class="foot-big" href="contacto.html" data-cursor="link">Cuéntame tu <em>proyecto</em> →</a>
+      <div class="foot-grid">
+        <div><h2>Estudio</h2><p>Barcelona · trabajo en toda Cataluña y viajo para bodas.</p></div>
+        <div><h2>Contacto</h2><ul><li>hola@irenecasals.example</li><li>+34 000 000 000</li></ul></div>
+        <div><h2>Redes</h2><ul><li>Instagram · @irenecasals.demo</li><li>Pinterest · irenecasals</li></ul></div>
+        <div><h2>Web</h2><ul><li><a href="portafolio.html">Portafolio</a></li><li><a href="servicios.html">Tarifas</a></li><li><a href="contacto.html">Presupuesto</a></li></ul></div>
+      </div>
+      <div class="foot-bottom"><span>© 2026 Irene Casals · Fotógrafa ficticia de demostración</span><span>Imágenes CC de sus autores · <a href="creditos.html">Créditos fotográficos</a></span></div>
+    </div>
+  </footer>
+  <script defer src="lib/gsap.min.js?v=20260927"></script>
+  <script defer src="lib/ScrollTrigger.min.js?v=20260927"></script>
+  <script defer src="lib/manifest.js?v=20260927"></script>
+  <script defer src="main.js?v=20260927"></script>
+</body>
+</html>
